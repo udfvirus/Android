@@ -10,6 +10,11 @@ ARG android_build_tools
 # 4333796
 ARG android_sdk_tools
 
+echo $android_compile_sdk
+echo $android_build_tools
+echo $android_sdk_tools
+echo "test"
+
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_sdk_tools.zip" \
     ANDROID_HOME="/usr/local/android-sdk" \
     ANDROID_VERSION=$android_compile_sdk \
