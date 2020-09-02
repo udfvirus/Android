@@ -10,9 +10,9 @@ ARG android_build_tools
 # 4333796
 ARG android_sdk_tools
 
-RUN echo $android_compile_sdk
-RUN echo $android_build_tools
-RUN echo $android_sdk_tools
+RUN echo ${android_compile_sdk}
+RUN echo ${android_build_tools}
+RUN echo ${android_sdk_tools}
 RUN echo "test"
 
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_sdk_tools.zip" \
