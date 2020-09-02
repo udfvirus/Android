@@ -4,16 +4,11 @@ MAINTAINER javavirys@gmail.com
 USER root
 
 # 29
-ARG android_compile_sdk
+ARG android_compile_sdk=29
 # 29.0.3
-ARG android_build_tools
+ARG android_build_tools=29.0.3
 # 4333796
-ARG android_sdk_tools
-
-RUN echo "$android_compile_sdk"
-RUN echo "${android_build_tools}"
-RUN echo "android_sdk_tools"
-RUN echo "test"
+ARG android_sdk_tools=4333796
 
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_sdk_tools.zip" \
     ANDROID_HOME="/usr/local/android-sdk" \
