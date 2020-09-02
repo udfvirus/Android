@@ -3,8 +3,11 @@ FROM openjdk:8
 MAINTAINER javavirys@gmail.com
 USER root
 
+# 29
 ARG android_compile_sdk
+# 29.0.3
 ARG android_build_tools
+# 4333796
 ARG android_sdk_tools
 
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_sdk_tools.zip" \
@@ -12,11 +15,6 @@ ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_s
     ANDROID_VERSION=$android_compile_sdk \
     PROJECT_NAME=$project_name \
     ANDROID_BUILD_TOOLS_VERSION=$android_build_tools
-
-RUN echo "test"
-RUN echo $android_compile_sdk
-RUN echo $android_build_tools
-RUN echo $android_sdk_tools
 
 ENV ANDROID_SDK=$ANDROID_HOME
 
