@@ -13,6 +13,7 @@ ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_s
     PROJECT_NAME=$project_name \
     ANDROID_BUILD_TOOLS_VERSION=$android_build_tools
 
+RUN echo "test"
 RUN echo $android_compile_sdk
 RUN echo $android_build_tools
 RUN echo $android_sdk_tools
