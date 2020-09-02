@@ -5,17 +5,14 @@ USER root
 
 # 29
 ARG android_compile_sdk
-ENV android_compile_sdk $android_compile_sdk
 # 29.0.3
 ARG android_build_tools
-ENV android_build_tools $android_build_tools
 # 4333796
 ARG android_sdk_tools
-ENV android_sdk_tools $android_sdk_tools
 
-RUN echo ${android_compile_sdk}
-RUN echo ${android_build_tools}
-RUN echo ${android_sdk_tools}
+RUN echo "$android_compile_sdk"
+RUN echo "${android_build_tools}"
+RUN echo "android_sdk_tools"
 RUN echo "test"
 
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-$android_sdk_tools.zip" \
