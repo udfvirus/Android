@@ -11,4 +11,4 @@ jobs:
         name: javavirys/android:${{ secrets.ANDROID_BUILD_TOOLS }}
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        docker-build-args: "--build-arg android_compile_sdk=${{ secrets.ANDROID_COMPILE_SDK }} --build-arg android_build_tools=${{ secrets.ANDROID_BUILD_TOOLS }} --build-arg android_sdk_tools=${{ secrets.ANDROID_SDK_TOOLS }}"
+        buildargs: android_compile_sdk=${{ secrets.ANDROID_COMPILE_SDK }},android_build_tools=${{ secrets.ANDROID_BUILD_TOOLS }},android_sdk_tools=${{ secrets.ANDROID_SDK_TOOLS }}
