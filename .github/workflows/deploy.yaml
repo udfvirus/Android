@@ -12,7 +12,7 @@ jobs:
         ANDROID_BUILD_TOOLS: 29.0.3
         ANDROID_SDK_TOOLS: 4333796
       with:
-        name: javavirys/android:${{ secrets.ANDROID_BUILD_TOOLS }}
+        name: javavirys/android:ANDROID_BUILD_TOOLS
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         buildargs: android_compile_sdk=ANDROID_COMPILE_SDK,android_build_tools=ANDROID_BUILD_TOOLS,android_sdk_tools=ANDROID_SDK_TOOLS
