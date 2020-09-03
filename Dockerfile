@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM ubuntu:latest
 
 MAINTAINER javavirys@gmail.com
 USER root
