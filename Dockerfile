@@ -6,7 +6,7 @@ USER root
 # 29
 ARG android_compile_sdk=30
 # 29.0.3
-ARG android_build_tools=30.0.2
+ARG android_build_tools=30.0.3
 # 4333796
 ARG android_sdk_tools=4333796
 
