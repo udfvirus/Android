@@ -23,6 +23,8 @@ RUN apt-get -y install unzip
 RUN apt-get -y install curl wget
 RUN apt-get -y install software-properties-common
 RUN apt-get -y install libgl1-mesa-glx
+
+RUN apt-get -y install openjdk-8-jdk
 RUN apt-get -y install openjdk-11-jdk
 
 # Download Android SDK
