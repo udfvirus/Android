@@ -24,7 +24,6 @@ RUN apt-get -y install curl wget
 RUN apt-get -y install software-properties-common
 RUN apt-get -y install libgl1-mesa-glx
 RUN apt-get -y install openjdk-8-jdk
-RUN apt-get -y install openjdk-17-jdk
 
 # Download Android SDK
 RUN mkdir "$ANDROID_HOME" .android \
@@ -48,3 +47,5 @@ RUN yes | $ANDROID_HOME/tools/bin/sdkmanager --licenses
 RUN $ANDROID_HOME/tools/bin/avdmanager create avd -n mynexus -k "system-images;android-29;google_apis;x86" --tag "google_apis" --device "Nexus 5"
 
 RUN apt-get update && apt-get -y install android-tools-adb android-tools-fastboot
+
+RUN apt-get -y install openjdk-17-jdk
